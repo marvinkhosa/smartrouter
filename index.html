@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="gray-theme">
+    <head>
+        
+
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <title>ReadyFleetService</title>
+        <!-- Material design icons CSS -->
+        <link rel="stylesheet" href="vendor/materializeicon/material-icons.css">
+        <!-- Roboto fonts CSS -->
+        <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Swiper CSS -->
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="app">
+            <div class="row no-gutters vh-100 loader-screen">
+                <div class="col align-self-center text-white text-center">
+                    <img style="width: 246px;" src="img/logos.png" alt="logo">
+                    <p class="text-mute text-uppercase small"></p>
+                    <div class="laoderhorizontal">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="mt-4 mb-3">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="list-group main-menu">
+                        	<div class="form-group">
+		                        <label>Location</label>
+		                        <input type="text" class="form-control form-control-lg" name="iden" id="iden" required="">
+		                    </div> 
+                            <div class="form-group">
+		                        <label>Frequency</label>
+		                        <input type="text" class="form-control form-control-lg" name="freq" id="freq" value="10" required="">
+		                    </div>
+		                    <div class="form-group">
+		                        <label>Server URL</label>
+		                        <input type="text" class="form-control form-control-lg" name="serverurl" id="serverurl" required="">
+		                    </div>
+
+                            <button id="identifier" style="background-color: #091C30; border-color: #091C30;" type="button" class="mb-2 btn btn-success">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="closesidemenu"><i class="material-icons icons-raised bg-dark ">close</i></a>
+              <div class="wrapper">
+                <!-- header -->
+                <div class="header">
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                    <button class="btn  btn-link text-dark menu-btn"><i class="material-icons">menu</i><span class="new-notification"></span></button>
+                </div>
+                        <div class="col text-center"></div>
+                        <div class="col-auto">
+                        </div>
+                    </div>
+                </div>
+                <!-- header ends -->
+
+                <div class="row no-gutters login-row">
+                    <div class="col align-self-center px-3 text-center">
+                        <img src="img/logos.png" alt="logo" class="logo-small"><br><br><br>
+                        <div class="col" id="starttrackingblk">
+                        <button id="srttrack" style="background-color: #091C30; border-color: #091C30;" class="btn btn-success btn-lg btn-rounded shadow btn-block">Start Tracking</button>
+
+                        </div>
+                        <div id="stoptrackingblk" class="col" style="display:none">
+                        <button id="stptrack" class="btn btn-danger btn-lg btn-rounded shadow btn-block">Stop Tracking</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mx-0 bottom-button-container">
+                    <div class="col">
+                        <button class="mb-4 btn btn-outline-info btn-rounded" id="showmodel">Status</button>
+                    </div>
+                </div>
+
+            <div class="modal fade show" id="logmodel" tabindex="-1" role="dialog" aria-modal="true">
+                <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center pt-0" id="log">
+                           <div class="col-12 px-0">
+                    <ul class="list-group list-group-flush border-top border-bottom" id="logdata">
+                       
+                      
+                    </ul>
+                </div>
+
+                        </div>
+
+                        <div class="modal-footer border-0">
+                            <div class="col text-center">
+                            <button id="clrlog" class="btn btn-outline-info btn-rounded">Clear Log</button>
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <script src="js/jquery-3.3.1.min.js?v=12" type="text/javascript"></script>
+        <script src="js/popper.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap-4.4.1/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- swiper js -->
+        <script src="vendor/swiper/js/swiper.min.js" type="text/javascript"></script>
+        <!-- cookie js -->
+        <script src="vendor/cookie/jquery.cookie.js" type="text/javascript"></script>
+        <!-- template custom js -->
+        <script src="js/jquery.timeago.js"></script>
+        <script type="text/javascript" src="js/main.js" ></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+       
+
+</div>
+    </body>
+</html>
